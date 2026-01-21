@@ -61,7 +61,7 @@ Follow these steps to run the project locally on your machine.
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/Arun0041/Sudoku-Solver.git](https://github.com/Arun0041/Sudoku-Solver.git)
+    git clone https://github.com/Arun0041/Sudoku-Solver.git
     cd Sudoku-Solver
     ```
 
@@ -84,7 +84,6 @@ Follow these steps to run the project locally on your machine.
 
 **Arun** - **LinkedIn:** [linkedin.com/in/arun004](https://www.linkedin.com/in/arun004/)  
 - **GitHub:** [github.com/Arun0041](https://github.com/Arun0041)  
-- **Email:** sharmarun004@gmail.com
 
 ---
 
