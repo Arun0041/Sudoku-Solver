@@ -2,6 +2,12 @@
 
 A React + Vite Sudoku web app that visualizes backtracking in real time.
 
+## Documentation
+
+- [User Guide](docs/USER_GUIDE.md)
+- [Developer Guide](docs/DEVELOPER_GUIDE.md)
+- [Changelog](docs/CHANGELOG.md)
+
 ## Features
 
 - Interactive 9x9 Sudoku grid.
@@ -66,3 +72,10 @@ npm run dev
 - `npm run build`: build production bundle
 - `npm run preview`: preview production build
 - `npm run lint`: run ESLint
+
+## Project Structure
+
+- `src/App.jsx`: main UI, board state, solver flow, validation actions.
+- `src/App.css`: layout, visual theme, and mobile responsiveness.
+- `src/solver.js`: Sudoku validity check and animation delay helper.
+- `docs/`: user and developer documentation.
