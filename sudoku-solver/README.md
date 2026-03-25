@@ -1,16 +1,68 @@
-# React + Vite
+# Sudoku Solver Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite Sudoku web app that visualizes backtracking in real time.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive 9x9 Sudoku grid.
+- Backtracking solver with step-by-step visualization.
+- Adjustable solve speed.
+- Start/stop controls while solving.
+- Board validation that highlights rule conflicts.
+- Sample puzzle loader (`Easy` and `Medium`).
+- Real-time board stats (`Empty Cells`, `Conflicts`).
 
-## React Compiler
+## New Project Feature
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Validation + Conflict Highlighting
 
-## Expanding the ESLint configuration
+The app now validates the current board before solving and can also be checked manually with `Validate Board`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Conflicting cells are highlighted in red.
+- Solver is blocked until all conflicts are fixed.
+- Status messages explain the current board state.
+
+### Sample Puzzle Loader
+
+Use the `Easy` and `Medium` buttons to quickly load playable Sudoku boards.
+
+- Loaded clue cells are treated as fixed and cannot be edited.
+- Non-clue cells stay editable for experiments and custom entries.
+
+## How to Run
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start development server:
+
+```bash
+npm run dev
+```
+
+3. Open the local URL shown in terminal (usually `http://localhost:5173`).
+
+## Usage Guide
+
+1. Enter digits (`1-9`) into empty cells or load a sample puzzle.
+2. Click `Validate Board` to detect conflicts early.
+3. Use the speed slider to control animation speed.
+4. Click `Solve Puzzle` to watch recursive backtracking.
+5. Click `Stop` to halt solving at any point.
+6. Click `Clear Board` to reset everything.
+
+## Tech Stack
+
+- React
+- Vite
+- Plain CSS
+
+## Scripts
+
+- `npm run dev`: start dev server
+- `npm run build`: build production bundle
+- `npm run preview`: preview production build
+- `npm run lint`: run ESLint
